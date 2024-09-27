@@ -40,3 +40,13 @@ run-bot:
 test:
 	@echo "Running tests..."
 	$(PYTEST) $(TEST_DIR)
+
+.PHONY: build
+build:
+	@echo "Building Docker container..."
+	docker build -t telegram-bot-jeopardy .
+
+.PHONY: run
+run:
+	@echo "Running Docker container..."
+	docker run --env-file .env telegram-bot-jeopardy
