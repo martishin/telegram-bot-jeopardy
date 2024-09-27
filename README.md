@@ -1,5 +1,4 @@
-
-# Telegram Jeopardy Bot
+# Telegram Jeopardy! Bot
 
 Telegram bot that uses a machine learning model to answer questions related to Jeopardy!  
 The bot is built with the `python-telegram-bot` library and uses a `Doc2Vec` model that **will be trained** based on a Jeopardy dataset. Once trained, the model can provide answers to questions from the Jeopardy dataset.  
