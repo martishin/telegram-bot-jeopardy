@@ -43,7 +43,7 @@ async def handle_message(update, context):
 
         await update.message.reply_text(
             f"I know this question, its number is {question_number}. \n"
-            f"I'm {certainty}% sure of this. The answer is: {answer}"
+            f"I'm {certainty}% sure of this. The answer is: \"{answer}\""
         )
     except Exception as e:
         logger.error(f"Error handling question: {str(e)}")
