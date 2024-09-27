@@ -1,0 +1,8 @@
+pandas
+nltk
+gensim
+python-telegram-bot
+black
+isort
+pytest
+python-dotenv
